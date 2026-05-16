@@ -9,17 +9,18 @@
 <body>
     <header>
         <nav class="navigation_portfolio">
-            <a href="#tp0" class="exercice">TP0</a>
-            <a href="#tp1" class="exercice">TP1</a>
-            <a href="#selecteurs" class="exercice">Selecteurs</a>
-            <a href="#flexbox" class="exercice">Flexbox</a>
-            <a href="#testimonials" class="exercice">Testimonials</a>
-            <a href="#tp2" class="exercice">TP2</a>
-            <a href="#accessibilite" class="exercice">Accessibilité</a>
-            <a href="#tp3" class="exercice">TP3</a>
-            <a href="#sommatif" class="exercice">Entretien Sommatif</a>
-            <a href="#tp4" class="exercice">TP4</a>
-            <a href="#epigraphe" class="exercice">Projet Épigraphe</a>
+            <ul>
+                <li>
+                    <a class="lien-travaux" href="#">Travaux</a>
+                    <ul>
+                        <li><a class="menu-exercice" href="#tp1" class="exercice">TP1</a></li>
+                        <li><a class="menu-exercice" href="#tp2" class="exercice">TP2</a></li>
+                        <li><a class="menu-exercice" href="#tp3" class="exercice">TP3</a></li>
+                        <li><a class="menu-exercice" href="#tp4" class="exercice">TP4</a></li>
+                        <li><a class="menu-exercice" href="#epigraphe" class="exercice">Projet Épigraphe</a></li>
+                    </ul>
+                </li> 
+            </ul>
         </nav>
         <p class="kicker">intégration 2 - cégep de sainte-foy • 2025 - 2026</p>
         <h1 class="titre">Le parcours de Gabriel Lavictoire</h1>
@@ -29,150 +30,177 @@
     <main>
         <div class="explication">
             <h2 class="explication__titre">en quelques mots</h2>
-            <p class="explication_texte">Ce site présente les travaux réalisés pendant ma session en intégration 2. Chaque projet m'a permis de pousser mes connaissances un peu plus loin — des fondements du HTML jusqu'au positionnement avancé en CSS Grid et Flexbox. Je suis fière du chemin parcouru depuis janvier</p>
+            <p class="explication__texte">Ce site présente les travaux réalisés pendant ma session en intégration 2. Chaque projet m'a permis de pousser mes connaissances un peu plus loin — des fondements du HTML jusqu'au positionnement avancé en CSS Grid et Flexbox. Je suis fière du chemin parcouru depuis janvier</p>
         </div>
         <p class="projet-et-exercices">projet & exercice</p>
-        <div class="contenue" id="#tp0">
+        <div class="contenue" id="tp1">
             <div class="mini-entete">
-                <p class="semaine">Semaine 1</p>
-                <div class="categorie">Exercice</div>
+                <p class="semaine">semaine 2</p>
+                <div class="categorie tp">TP</div>
             </div>
-            <img class="image_exercice" src="" alt="">
-            <div class="section_exercice">
-                <h3 class="titre_exercice">TP0 — Configuration de l'environnement</h3>
-                <p class="apprentissage"></p>
-                <p class="description"></p>
-                <button>plus de détails</button>
+            <img class="image__exercice" src="../images/screencapture-127-0-0-1-5501-2026-05-16-16_55_43.png" alt="TP1">
+            <div class="section__exercice">
+                <h3 class="titre__exercice">TP1 — Balisage HTML sémantique</h3>
+                <p class="apprentissage">apprentissages en vrac :</p>
+                <div class="boite__apprentissage">header/main/footer</div> <div class="boite_apprentissage">h1-h6</div> <div class="boite_apprentissage">Validation HTML</div> <div class="boite_apprentissage">Sématisation</div>
+                <p class="description">Première étape du TP1: structurer une page avec un HTML propre, accessible et conforme avant la mise en forme CSS</p>
+                <button class="details" command="show-modal" commandfor="detail__tp1">plus de détails</button>
+
+                <dialog id="detail__tp1">
+                    <p class="detail__semaine">
+                        Semaine 2
+                    </p>
+                    <p class="detail__categorie">
+                        Tp
+                    </p>
+                    <h1 class="detail__titre_exercice">TP1 — Balisage HTML sémantique</h1>
+                    <p class="detail__mise">Mise en place des outils et des methodes de travail avant le demarrage des projet du cours</p>
+                    <div class="detail__dif">
+                        <h2 class="dif__titre">ce qui était difficile</h2>
+                        <p class="dif__desc">Après un mois de congé, j'avais de la difficulté à me souvenir comment le CSS fonctione</p>
+                    </div>
+                    <di class="detail__fiere">
+                        <h2 class="fiere__titre">ce dont je suis fière</h2>
+                        <p class="fiere__desc">Je suis très fière du HTML</p>
+                        <button class="fermer" commandfor="detail__tp1" command="close">Fermer</button>
+                    </div>
+                </dialog>
             </div>
         </div>
-        <div class="contenue" id="">
+        <div class="contenue" id="tp2">
             <div class="mini-entete">
-                <p class="semaine"></p>
-                <div class="categorie"></div>
+                <p class="semaine">Semaine 6</p>
+                <div class="categorie">TP</div>
             </div>
-            <img class="image_exercice" src="" alt="">
+            <img class="image_exercice" src="../images/screencapture-127-0-0-1-5501-2026-05-16-16_59_31.png" alt="TP2">
             <div class="section_exercice">
-                <h3 class="titre_exercice"></h3>
-                <p class="apprentissage"></p>
-                <p class="description"></p>
-                <button>plus de détails</button>
+                <h3 class="titre_exercice">TP2 — Intégration complete de maquette</h3>
+                <p class="apprentissage">apprentissages en vrac :</p>
+                <div class="boite__apprentissage">grid</div>
+                <p class="description">Utiliser les grid pour la mise en page</p>
+                <button class="details" command="show-modal" commandfor="detail__tp2">plus de détails</button>
+
+                <dialog id="detail__tp2">
+                    <p class="detail__semaine">
+                        Semaine 6
+                    </p>
+                    <p class="detail__categorie">
+                        Tp
+                    </p>
+                    <h1 class="detail__titre_exercice">TP2 — Intégration complete de maquette</h1>
+                    <p class="detail__mise">Mise en place des outils et des methodes de travail avant le demarrage des projet du cours</p>
+                    <div class="detail__dif">
+                        <h2 class="dif__titre">ce qui était difficile</h2>
+                        <p class="dif__desc">Les grids ont été le plus compliqué, je ne comprennais pas comments ils fonctionnais</p>
+                    </div>
+                    <di class="detail__fiere">
+                        <h2 class="fiere__titre">ce dont je suis fière</h2>
+                        <p class="fiere__desc">Je suis fière de comment j'ai intégrer le code dans les div</p>
+                        <button class="fermer" commandfor="detail__tp2" command="close">Fermer</button>
+                    </div>
+                </dialog>
             </div>
         </div>
-        <div class="contenue" id="">
+        <div class="contenue" id="tp3">
             <div class="mini-entete">
-                <p class="semaine"></p>
-                <div class="categorie"></div>
+                <p class="semaine">Semaine 8</p>
+                <div class="categorie">TP</div>
             </div>
-            <img class="image_exercice" src="" alt="">
+            <img class="image_exercice" src="../images/screencapture-127-0-0-1-5501-2026-05-16-17_03_01.png" alt="TP3 ">
             <div class="section_exercice">
-                <h3 class="titre_exercice"></h3>
-                <p class="apprentissage"></p>
-                <p class="description"></p>
-                <button>plus de détails</button>
+                <h3 class="titre_exercice">TP3 — Formulaire Accessible</h3>
+                <p class="apprentissage">apprentissages en vrac :</p>
+                <div class="boite__apprentissage">accessibilité</div>
+                <p class="description">Créer un formulaire conforme aux règles d'accesibilité</p>
+                <button class="details" command="show-modal" commandfor="detail__tp3">plus de détails</button>
+
+                <dialog id="detail__tp3">
+                    <p class="detail__semaine">
+                        Semaine 8
+                    </p>
+                    <p class="detail__categorie">
+                        Tp
+                    </p>
+                    <h1 class="detail__titre_exercice">TP3 — Formulaire Accessible</h1>
+                    <p class="detail__mise">Mise en place des outils et des methodes de travail avant le demarrage des projet du cours</p>
+                    <div class="detail__dif">
+                        <h2 class="dif__titre">ce qui était difficile</h2>
+                        <p class="dif__desc">La grandeur des symbols, la longeur des input et trouver des couleurs qui se contrast très bien</p>
+                    </div>
+                    <di class="detail__fiere">
+                        <h2 class="fiere__titre">ce dont je suis fière</h2>
+                        <p class="fiere__desc">Le  mot brochure qui est différent des autres dans la même phrase, les icone intégrer dans les radios</p>
+                        <button class="fermer" commandfor="detail__tp3" command="close">Fermer</button>
+                    </div>
+                </dialog>
             </div>
         </div>
-        <div class="contenue" id="">
+        <div class="contenue" id="tp4">
             <div class="mini-entete">
-                <p class="semaine"></p>
-                <div class="categorie"></div>
+                <p class="semaine">Semaine 9</p>
+                <div class="categorie">TP</div>
             </div>
-            <img class="image_exercice" src="" alt="">
+            <img class="image_exercice" src="../images/screencapture-127-0-0-1-5501-TP4-kampadejo-index-html-2026-05-16-17_06_20.png" alt="TP4">
             <div class="section_exercice">
-                <h3 class="titre_exercice"></h3>
-                <p class="apprentissage"></p>
-                <p class="description"></p>
-                <button>plus de détails</button>
+                <h3 class="titre_exercice">TP4 — Navigation Accessible</h3>
+                <p class="apprentissage">apprentissages en vrac :</p>
+                <div class="boite__apprentissage">accessibilité</div>
+                <p class="description">Créer un entete avec une navigation accessible</p>
+                <button class="details" command="show-modal" commandfor="detail__tp4">plus de détails</button>
+
+                <dialog id="detail__tp4">
+                    <p class="detail__semaine">
+                        Semaine 9
+                    </p>
+                    <p class="detail__categorie">
+                        Tp
+                    </p>
+                    <h1 class="detail__titre_exercice">TP4 — Navigation Accessible</h1>
+                    <p class="detail__mise">Mise en place des outils et des methodes de travail avant le demarrage des projet du cours</p>
+                    <div class="detail__dif">
+                        <h2 class="dif__titre">ce qui était difficile</h2>
+                        <p class="dif__desc">J'ai pas trouvé grand chose qui était difficile</p>
+                    </div>
+                    <di class="detail__fiere">
+                        <h2 class="fiere__titre">ce dont je suis fière</h2>
+                        <p class="fiere__desc">La navigation accessible</p>
+                        <button class="fermer" commandfor="detail__tp4" command="close">Fermer</button>
+                    </div>
+                </dialog>
             </div>
         </div>
-        <div class="contenue" id="">
+        <div class="contenue" id="epigraphe">
             <div class="mini-entete">
-                <p class="semaine"></p>
-                <div class="categorie"></div>
+                <p class="semaine">Semaine 11</p>
+                <div class="categorie">Projet synthèse</div>
             </div>
-            <img class="image_exercice" src="" alt="">
+            <img class="image_exercice" src="../images/screencapture-127-0-0-1-5502-html-chasse-html-2026-05-16-17_10_25.png" alt="Projet d'équipe La chasse aux épigraphe">
             <div class="section_exercice">
-                <h3 class="titre_exercice"></h3>
-                <p class="apprentissage"></p>
-                <p class="description"></p>
-                <button>plus de détails</button>
-            </div>
-        </div>
-        <div class="contenue" id="">
-            <div class="mini-entete">
-                <p class="semaine"></p>
-                <div class="categorie"></div>
-            </div>
-            <img class="image_exercice" src="" alt="">
-            <div class="section_exercice">
-                <h3 class="titre_exercice"></h3>
-                <p class="apprentissage"></p>
-                <p class="description"></p>
-                <button>plus de détails</button>
-            </div>
-        </div>
-        <div class="contenue" id="">
-            <div class="mini-entete">
-                <p class="semaine"></p>
-                <div class="categorie"></div>
-            </div>
-            <img class="image_exercice" src="" alt="">
-            <div class="section_exercice">
-                <h3 class="titre_exercice"></h3>
-                <p class="apprentissage"></p>
-                <p class="description"></p>
-                <button>plus de détails</button>
-            </div>
-        </div>
-        <div class="contenue" id="">
-            <div class="mini-entete">
-                <p class="semaine"></p>
-                <div class="categorie"></div>
-            </div>
-            <img class="image_exercice" src="" alt="">
-            <div class="section_exercice">
-                <h3 class="titre_exercice"></h3>
-                <p class="apprentissage"></p>
-                <p class="description"></p>
-                <button>plus de détails</button>
-            </div>
-        </div>
-        <div class="contenue" id="">
-            <div class="mini-entete">
-                <p class="semaine"></p>
-                <div class="categorie"></div>
-            </div>
-            <img class="image_exercice" src="" alt="">
-            <div class="section_exercice">
-                <h3 class="titre_exercice"></h3>
-                <p class="apprentissage"></p>
-                <p class="description"></p>
-                <button>plus de détails</button>
-            </div>
-        </div>
-        <div class="contenue" id="">
-            <div class="mini-entete">
-                <p class="semaine"></p>
-                <div class="categorie"></div>
-            </div>
-            <img class="image_exercice" src="" alt="">
-            <div class="section_exercice">
-                <h3 class="titre_exercice"></h3>
-                <p class="apprentissage"></p>
-                <p class="description"></p>
-                <button>plus de détails</button>
-            </div>
-        </div>
-        <div class="contenue" id="#epigraphe">
-            <div class="mini-entete">
-                <p class="semaine"></p>
-                <div class="categorie"></div>
-            </div>
-            <img class="image_exercice" src="" alt="">
-            <div class="section_exercice">
-                <h3 class="titre_exercice"></h3>
-                <p class="apprentissage"></p>
-                <p class="description"></p>
-                <button>plus de détails</button>
+                <h3 class="titre_exercice">La chasse aux épigraphe</h3>
+                <p class="apprentissage">apprentissages en vrac :</p>
+                <div class="boite__apprentissage">CSS avancé</div>
+                <p class="description">Créer un site web avec une équipe</p>
+                <button class="details" command="show-modal" commandfor="detail__epi">plus de détails</button>
+
+                <dialog id="detail__epi">
+                    <p class="detail__semaine">
+                        Semaine 11
+                    </p>
+                    <p class="detail__categorie">
+                        Projet synthèse
+                    </p>
+                    <h1 class="detail__titre_exercice">La chasse aux épigraphe</h1>
+                    <p class="detail__mise">Mise en place des outils et des methodes de travail avant le demarrage des projet du cours</p>
+                    <div class="detail__dif">
+                        <h2 class="dif__titre">ce qui était difficile</h2>
+                        <p class="dif__desc">Les capsules d'images et la position en Utilisant un grid-area</p>
+                    </div>
+                    <di class="detail__fiere">
+                        <h2 class="fiere__titre">ce dont je suis fière</h2>
+                        <p class="fiere__desc">Je suis très fière de comment la page resemblait à la fin du projet</p>
+                        <button class="fermer" commandfor="detail__epi" command="close">Fermer</button>
+                    </div>
+                </dialog>
             </div>
         </div>
     </main>
